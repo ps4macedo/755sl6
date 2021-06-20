@@ -221,7 +221,7 @@
 		function done(){
 			document.getElementById("myProgress").remove();
 			document.getElementById("progress").innerHTML="Exploração do kernel concluída!!! Agora injetando Goldhen v1.1... Por favor, <font color=\"#ee596f\">AGUARDE!!!</font>";
-			preloadScripts(['preloader.js', 'goldhen11.js', 'loader.js']);
+			preloadScripts(['jb.js','preloader.js', 'goldhen11.js', 'loader.js']);
 
 			if(window.postPayload)
 				window.postPayload();
@@ -230,7 +230,7 @@
 		
 		window.midExploit = function()
 		{
-			preloadScripts(['exploit.js','jb.js']);
+			preloadScripts(['exploit.js']);
 		}
 
 		window.postExploit = function()
